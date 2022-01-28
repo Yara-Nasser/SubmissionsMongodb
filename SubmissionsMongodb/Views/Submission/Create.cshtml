@@ -1,0 +1,9 @@
+﻿@model SubmissionsMongodb.Models.Submissions
+
+<form asp-action="Create">
+    <fieldset class="idea-form">
+        <h2>Create an Idea</h2>
+        @Html.TextAreaFor(m => m.Content)
+        <input type="submit" name="Create" />
+    </fieldset>
+</form>

@@ -1,0 +1,10 @@
+﻿@model SubmissionsMongodb.Models.Submissions
+
+<form asp-action="Edit">
+    <fieldset class="idea-form">
+        <h2>Edit Idea</h2>
+        @Html.HiddenFor(m => m.Created)
+        @Html.TextAreaFor(m => m.Content)
+        <input type="submit" name="Update" />
+    </fieldset>
+</form>
